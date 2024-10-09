@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +14,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+
     <div class="container">
+
         <header class="header">
+            <h1 class="title">DevDetective</h1>
             <div id="btn-mode">
-                <p id="mode-text">Dark</p>
-                <div><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""/></div>
+                <p id="mode-text">DARK</p>
+                <div class="icon-container"><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""></div>
             </div>
         </header>
 
         <main>
             <div id="app">
+
                 <div class="searchbar-container active">
-                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub Username..." required/>
+                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." required>
                     <div class="error">
                         <p id="no-results">no search results</p>
                     </div>
@@ -87,7 +93,10 @@
                 </div>
             </div>
         </main>
+
     </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>
