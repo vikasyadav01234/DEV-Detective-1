@@ -16,6 +16,41 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <div id="btn-mode">
+                <p id="mode-text">Dark</p>
+                <div><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""/></div>
+            </div>
+        </header>
+
+        <main>
+            <div id="app">
+                <div class="searchbar-container active">
+                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub Username..." required/>
+                    <div class="error">
+                        <p id="no-results">no search results</p>
+                    </div>
+                    <button class="btn-search" id="submit">Search</button>
+                </div>
+
+                <div>
+                    <div>
+                        <div>
+                            <img/>
+                            <div>
+                                <div>
+                                    <h2></h2>
+                                    <a href="#"></a>
+                                </div>
+                                <p id="date"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
