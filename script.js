@@ -164,3 +164,25 @@ function lightModeProperties() {
   localStorage.setItem("dark-mode", false);
   console.log("setting dark mode to false");
 }
+
+//INITIALISE UI
+function init() {
+  const value = localStorage.getItem("dark-mode");
+
+  if (value === null) {
+    console.log("null k andar");
+    localStorage.setItem("dark-mode", darkMode);
+    lightModeProperties();
+  } else if (value == "true") {
+    console.log("true k andar");
+    darkModeProperties();
+  } else if (value == "false") {
+    console.log("false k andar");
+    lightModeProperties();
+  }
+
+  //by default, vikas ki info show krre h UI pr
+  getUserData(url + "vikasyadav01234");
+}
+
+init();
